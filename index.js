@@ -83,3 +83,47 @@ let number = square(2);
 console.log(number);
 
 console.log(square(5));
+
+// Arithmetic operators
+let x=10;
+let y=3;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y); // Mod operator
+console.log(x ** y); // Exponenciation operator (x^y)
+
+// Increment (++)
+console.log(++x);
+console.log(x++);
+
+// Decrement operator (--)
+console.log(--x);
+console.log(x--);
+
+let a = 1;
+// Relational operators
+console.log(a > 0);
+console.log(a < 0);
+console.log(a >= 0);
+console.log(a <= 0);
+// Equality operators
+console.log(a === 1);
+console.log(a !== 1);
+
+// Equality operators:
+// Strict (type + value)
+console.log(1 === 1);
+console.log('1' === 1);
+// Loose (type on the right side gets converted to type on the left side)
+console.log(1 == 1);
+console.log('1' == 1);
+console.log(true == 1);
+
+// Ternary operator:
+// If a customer has more than 100 points, they are a 'gold' customer, 
+// otherwise, they are a 'silver' customer.
+let points = 70;
+let type = points > 100 ? 'gold' : 'silver';
+console.log(type);
