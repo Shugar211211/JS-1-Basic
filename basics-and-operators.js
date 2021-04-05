@@ -102,15 +102,15 @@ console.log(x++);
 console.log(--x);
 console.log(x--);
 
-let a = 1;
+let v = 1;
 // Relational operators
-console.log(a > 0);
-console.log(a < 0);
-console.log(a >= 0);
-console.log(a <= 0);
+console.log(v > 0);
+console.log(v < 0);
+console.log(v >= 0);
+console.log(v <= 0);
 // Equality operators
-console.log(a === 1);
-console.log(a !== 1);
+console.log(v === 1);
+console.log(v !== 1);
 
 // Equality operators:
 // Strict (type + value)
@@ -127,3 +127,64 @@ console.log(true == 1);
 let points = 70;
 let type = points > 100 ? 'gold' : 'silver';
 console.log(type);
+
+// Logical operators: 
+// AND (&&)
+// OR (||)
+// NOT (!)
+
+// Logical operators with non-boolean values: falsy VS trusy.
+// Falsy treated is boolean false, truthy treated as boolean truth.
+// Non-boolean value is returned in case of non-boolean operand values.
+
+// Falsy non-boolean values: 
+//  undefined, 
+//  null, 
+//  0, 
+//  false, 
+//  '', 
+//  NaN
+// Anything that is non Falthy -> Truthy
+
+// false || true returns true
+// false || 'Mosh' returns "Mosh"
+// false || 1 returns 1
+
+// Evaluations starts from left to right. As soon as Truthy operand found, 
+// it is returned, and evaluations stops.
+// This is called Short-circuiting.
+// false || 1 || 2 returns 1
+
+// It is a good way to provide default values.
+
+let userColor = 'red';
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
+console.log(currentColor);
+
+userColor = undefined;
+defaultColor = 'blue';
+currentColor = userColor || defaultColor;
+console.log(currentColor);
+
+// Bitwise operators:
+// 1 = 00000001
+// 2 = 00000010
+// R = 00000011 = 3
+console.log(1 | 2); // Bitwise OR
+
+// 1 = 00000001
+// 2 = 00000010
+// R = 00000000 = 0
+console.log(1 & 2); // Bitwise AND
+
+// Exercise: Swapping variables
+let a = 'red';
+let b = 'blue';
+let c = a;
+console.log(a);
+console.log(b);
+a=b;
+b=c;
+console.log(a);
+console.log(b);
