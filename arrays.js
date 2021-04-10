@@ -223,7 +223,7 @@ console.log(atLeastOnePositive);
 
 /* Filtering an array. */
 
-// The funation runs on every element of the array.
+// The function runs on every element of the array.
 // If the element matches the criteria in the body of the function, 
 // the funation adds the element to new array.
 const filtreredArray = numbers5.filter(function(value) {
