@@ -25,7 +25,7 @@ This is done by javascript engine automatically while executing the code.
 */
 
 function sum(a, b) {
-    console.log(arguments); // Each function has 'argumrnts' object, which has some properties.
+    console.log(arguments); // Each function has 'arguments' object, which has some properties.
     return a + b;
 }
 // If not all arguments are passed to function, the result is NaN, as 1 + undefined = NaN.
